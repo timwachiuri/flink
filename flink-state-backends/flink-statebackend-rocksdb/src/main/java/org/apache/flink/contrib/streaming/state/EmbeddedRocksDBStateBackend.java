@@ -448,7 +448,7 @@ public class EmbeddedRocksDBStateBackend extends AbstractManagedMemoryStateBacke
         // first, make sure that the RocksDB JNI library is loaded
         // we do this explicitly here to have better error handling
         String tempDir = env.getTaskManagerInfo().getTmpWorkingDirectory().getAbsolutePath();
-        ensureRocksDBIsLoaded(tempDir);
+        //ensureRocksDBIsLoaded(tempDir);
 
         // replace all characters that are not legal for filenames with underscore
         String fileCompatibleIdentifier =
